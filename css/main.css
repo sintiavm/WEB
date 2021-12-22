@@ -7,14 +7,20 @@ html {
     height: 100%;
 }
 body {
-    color: #333333;
-    font: 0.75em/1.5em Arial,sans-serif;
+   font-family: 'Source Sans Pro', sans-serif;
 }
 .container {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
-    width: 96%;
+    margin-top: 10px;
+    width: 100%;
+}
+.navbar-brand img {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top:20px;
+    left: 50px;
 }
 
 /* common and top level styles */
@@ -27,13 +33,12 @@ body {
     padding: 0;
 }
 #nav {
-    background-color: #F5F5F5;
-    border-bottom: 5px solid #333333;
     float: left;
     margin-left: 1%;
     margin-right: 1%;
     position: relative;
     width: 98%;
+    top: 10px;
 }
 #nav ul.subs {
     background-color: #FFFFFF;
@@ -68,15 +73,17 @@ body {
     white-space: normal;
 }
 #nav > li > a {
-    color: #333333;
+    color: #26336D;
     display: block;
+    position: relative;
+    left: 600px;
     font-size: 1.3em;
-    line-height: 49px;
+    line-height: 30px;
     padding: 0 15px;
     text-transform: uppercase;
 }
 #nav > li:hover > a, #nav > a:hover {
-    background-color: #F55856;
+    background-color: #6C1512;
     color: #FFFFFF;
 }
 #nav li.active > a {
@@ -100,7 +107,7 @@ body {
     line-height: 20px;
 }
 #nav ul li a:hover {
-    color: #F55856;
+    color: #6C1512;
 }
 #nav ul.subs > li > a {
     font-size: 1.3em;
@@ -144,3 +151,82 @@ body {
         width: auto;
     }
 }    
+/* carrusel*/
+.contenedor {
+			position: absolute;
+			width: 100%;
+			height: 500px;
+			background-color: #26336D;
+            top: 120px;
+		}
+		.imagen {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			visibility: hidden;
+			opacity: 0;
+		}
+		
+		.imagen img {
+			height: 100%;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		.texto {
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			top: 85%;
+			color: white;
+			font-weight: bold;
+		}
+		
+		.contenedor a{
+			position: absolute;
+			text-decoration: none;
+			color: white;
+			font-size: 36px;
+			top : 50%;
+			transform: translateY(-50%);
+		}
+		.siguiente {
+			left: 97%;
+		}
+		
+		.boton {
+			position: absolute;
+			top: 5%;
+			left: 95%;
+		}
+		
+		.puntos {
+			position: absolute;
+			top: 93%;
+			width: 100%;
+			text-align: center;
+		}
+		.punto {
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			background-color: white;
+			border-radius: 50%;
+			margin-right: 5px;
+		}
+		.punto:hover {
+			cursor: pointer;
+			background-color: gray;
+		}
+		.contenedor a:hover {
+			color: gray;
+		}
+		
+		.actual {
+			visibility: visible;
+			opacity: 1;
+			transition: visibility 1s, opacity 1s;
+		}
+		.activo {
+			background-color: gray;
+		}

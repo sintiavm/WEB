@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
 <body>
     <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="ITMI Logo">
+          </a>
         <ul id="nav">
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Nosotros</a></li>
@@ -54,6 +58,47 @@
         </li>
         </ul>
     </div>
+
+<div class="contenedor">
+    <div class="imagen actual">
+        <img src="images/Slide 1.png" />
+        <div class="texto">Slide 1</div>
+    </div>
+    
+    <div class="imagen">
+        <img src="images/Slide 2.png" />
+        <div class="texto">Slide 2</div>
+    </div>
+    
+    <div class="imagen">
+        <img src="images/Slide 3.png" />
+        <div class="texto">Slide 3</div>
+    </div>
+    
+    <div class="imagen">
+        <img src="images/Slide 4.png" />
+        <div class="texto">Slide 4</div>
+    </div>
+    <div class="imagen">
+        <img src="images/Slide 4.png" />
+        <div class="texto">Slide 5</div>
+    </div>
+    <div class="imagen">
+        <img src="images/Slide 4.png" />
+        <div class="texto">Slide 6</div>
+    </div>
+    
+    <a href="#" class="anterior" onclick="anterior();">&#10094;</a>
+    <a href="#" class="siguiente" onclick="siguiente();">&#10095;</a>
+    
+    <div class="puntos">
+        <span class="punto activo" onclick="mostrar(0);"></span>
+        <span class="punto" onclick="mostrar(1);"></span>
+        <span class="punto" onclick="mostrar(2);"></span>
+        <span class="punto" onclick="mostrar(3);"></span>
+    </div>
+    
+</div>
 </body>
-<script defer src="JS/menu.js"></script>
+<script defer src="JS/carrusel.js"></script>
 </html>
